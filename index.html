@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="div1">
+
+        <div id="countKSQ">
+            <h1>KSQ sayı</h1>
+            <div id="count">
+                <button id="sub">-</button>
+                <input type="text" id="qtyBox" readonly="" onkeyup="createInput()" value="3">
+                <button id="add">+</button>
+
+            </div>
+
+            <div id="div4">
+                <h1>BSQ</h1>
+                <input type="checkbox" onclick="checkBSQ()">
+            </div>
+
+        </div>
+        <section class="ballar">
+            <div id="pointsKSQ">
+
+            </div>
+
+            <div id="pointBSQ">
+
+            </div>
+        </section>
+
+        <div id="buttons">
+            <button class="btn1" onclick="hesabla()">HESABLA</button>
+            <button class="btn2" onclick="sil()">SİL</button>
+        </div>
+
+
+    </div>
+
+    <div id="div2">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Yarımillik bal</td>
+                    <td id="yb"></td>
+                </tr>
+                <tr>
+                    <td>Yarımillik qiymət</td>
+                    <td id="yq"></td>
+                </tr>
+
+                <tr class="display">
+                    <td>KSQ*40%</td>
+                    <td id="ksq40"></td>
+                </tr>
+                <tr class="display">
+                    <td>BSQ*60%</td>
+                    <td id="bsq60"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="illik">
+        <h1>YB1</h1>
+        <input type="text">
+        <h1>YB2</h1>
+        <input type="text">
+        <button class="btn1" onclick="illikhes()">HESABLA</button>
+        <button class="btn2" onclick="illiksil()">SİL</button>
+
+        <div class="grade">
+            <div>                
+                <h1>İllik bal</h1>
+                <h1 id="ib"></h1>
+            </div>
+            <div>
+                <h1>İllik qiymət</h1>
+                <h1 id="iq"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
